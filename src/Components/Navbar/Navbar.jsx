@@ -1,17 +1,28 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './navbar.css'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {TbGridDots} from 'react-icons/tb'
 
 const Navbar = () => {
+   
+  // toggle navbar on and off at small width
+  const [active, setActive]= useState('navBar')
+
+  // this will bring navbar from top
+  const showNavBar = () =>{
+    setActive('navBar activeNavBar')
+  }
+  const removeNavBar = () =>{
+    setActive('navBar')
+  }
   return (
     <header className='header'>
       <div className='logoDiv'>
         <h1 className='logo'><a href="#home">HT</a></h1>
       </div>
 
-      <div className='navBar'>
-        <ul className='navLists'>
+      <div className={active}>
+        <ul onClick={removeNavBar} className='navLists'>
           <li className='navItem'>
            <a href="#about" className='navLink'>
             <span className='headerNumber'>1.</span> About</a>    
@@ -33,12 +44,12 @@ const Navbar = () => {
            </button>
         </ul>
 
-        <div className="closeNavBar">
+        <div onClick={removeNavBar} className='closeNavBar'>
             <AiFillCloseCircle className='icon'/>
         </div>
      </div>
 
-     <div className='toggleNavBar'>
+     <div onClick={showNavBar} className='toggleNavBar'>
       <TbGridDots className='icon'/>
      </div>
 
