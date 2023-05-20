@@ -21,9 +21,19 @@
   z-index: 10;
   background: var(--projectCardColor);
 }
+.header .logo {
+  background-color: var(--primaryColor);
+  border-radius: 50%;
+}
 .header .logo a {
-  color: var(--textColor);
-  font-weight: 500;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--BgColor);
+  font-size: large;
+  font-weight: 800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
@@ -81,4 +91,9 @@
   .header .activeNavBar {
     top: 6rem;
   }
+}
+
+.activeHeader {
+  background-color: var(--projectCardColor);
+  box-shadow: 0 2px 4px rgba(1, 15, 29, 0.904);
 }/*# sourceMappingURL=navbar.css.map */

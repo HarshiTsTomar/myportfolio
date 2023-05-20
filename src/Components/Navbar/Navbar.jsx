@@ -15,8 +15,21 @@ const Navbar = () => {
   const removeNavBar = () =>{
     setActive('navBar')
   }
+
+const [activeHeader, setactiveHeader] = useState('header')
+const addBg = () =>{
+  if(window.scrollY >= 10){
+    setactiveHeader('header activeHeader')
+  }
+  else{
+    setactiveHeader('header')
+  }
+}
+
+window.addEventListener('scroll', addBg)
+
   return (
-    <header className='header'>
+    <header className={activeHeader}>
       <div className='logoDiv'>
         <h1 className='logo'><a href="#home">HT</a></h1>
       </div>
@@ -28,7 +41,7 @@ const Navbar = () => {
             <span className='headerNumber'>1.</span> About</a>    
           </li> 
           <li className='navItem'>
-           <a href="#skills" className='navLink'>
+           <a href="#skill" className='navLink'>
            <span className='headerNumber'>2.</span> Skills</a>   
           </li> 
           <li className='navItem'>

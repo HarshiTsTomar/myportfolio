@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
 import {TbCloudDownload} from 'react-icons/tb'
+import img from '../../Assets/ht3.jpg'
 
 const About = () => {
   return (
@@ -26,11 +27,15 @@ const About = () => {
           </h4>
 
           <div className="aboutBtn">
-            <a href="HarshitResume.pdf" download={HarshitResume.pdf} className='flex'>
+            <a href="HarshitResume.pdf" download="HarshitResume.pdf" className='flex'>
               Download CV <TbCloudDownload className='icon'/>
             </a>
           </div>
-        </div>     
+        </div>  
+
+        <div className="aboutImgDiv">
+          <img src={img} alt="Harshit Tomar" />
+        </div>   
 
       </div>
     </section>
