@@ -73,4 +73,45 @@
 .project .projectContainer .singleProject .technologies small {
   color: var(--SecondaryColor);
   font-weight: 600;
+}
+
+@media screen and (min-width: 600px) {
+  .project .projectContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project .projectContainer .singleProject .imgDiv {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .project {
+    width: 70%;
+    margin: auto;
+  }
+  .project .projectContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1150px) {
+  .project .projectContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project .projectContainer .singleProject .imgDiv {
+    height: 200px;
+  }
+  .project .projectContainer .singleProject .desc {
+    font-size: 17px;
+  }
+  .project .projectContainer .singleProject .desc .technologies small {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .project {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .project .projectContainer .singleProject .imgDiv {
+    height: 200px;
+  }
 }/*# sourceMappingURL=projects.css.map */

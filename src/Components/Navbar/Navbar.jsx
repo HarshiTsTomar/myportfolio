@@ -53,7 +53,7 @@ window.addEventListener('scroll', addBg)
            <span className='headerNumber'>4.</span> Contact</a>    
           </li> 
            <button className='btn'>
-            <a href="">Resume</a>
+            <a href="HarshitResume.pdf" download >Resume</a>
            </button>
         </ul>
 

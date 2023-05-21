@@ -1,7 +1,6 @@
 import React from 'react'
 import './home.css'
-import {AiFillGithub}from 'react-icons/ai'
-import {FiTwitter, FiYoutube}from 'react-icons/fi'
+import {AiFillGithub, AiFillLinkedin}from 'react-icons/ai'
 import { TbArrowBigRightLines, TbChevronsDown } from 'react-icons/tb'
 
 
@@ -10,20 +9,17 @@ const Home = () => {
     <section id='home' className='home section'>
 
       {/* content visible at wide screen */}
-      {/* <div className='leftIcons'>
+      <div className='leftIcons'>
         <div className='socials grid'>
-          <a href="" target='_blank'>
+          <a href="https://github.com/HarshiTsTomar" target='_blank'>
             <AiFillGithub className='icon'/>
           </a>
-          <a href="" target='_blank'>
-            <FiTwitter className='icon'/>
-          </a>
-          <a href="" target='_blank'>
-            <FiYoutube className='icon'/>
+          <a href="https://www.linkedin.com/in/harshit-singh-tomar-6635a4242/" target='_blank'>
+            <AiFillLinkedin className='icon'/>
           </a>
           <div className="line"></div>
         </div>
-      </div> */}
+      </div>
 
       {/* homeContent */}
       <div className="container homeContainer">
@@ -60,7 +56,8 @@ const Home = () => {
       </div>
 
       {/* right div, with email address*/}
-      {/* <div className="rightEmail">
+
+      <div className="rightEmail">
         <div>
           <div className="emailAddress">
             <a href="https://mailto:harshitt59@gmail.com" target='_blank'>
@@ -70,7 +67,7 @@ const Home = () => {
 
           <div className="line"></div>
         </div>
-      </div> */}
+      </div>
     </section>
   )
 }

@@ -17,7 +17,7 @@ const App = () => {
     <Skills/>
     <Project/>
     <Contact/>
-    {/* <Footer/> */}
+    <Footer/>
     </>
   )
 }

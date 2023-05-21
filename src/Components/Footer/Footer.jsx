@@ -3,8 +3,8 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <section >
-      footer
+    <section  className='footer'>
+      <span>Developed by Harshit Tomar 2022 | All rights reserved.</span>
     </section>
   )
 }
