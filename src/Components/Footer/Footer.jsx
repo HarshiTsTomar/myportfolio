@@ -4,7 +4,7 @@ import './footer.css'
 const Footer = () => {
   return (
     <section  className='footer'>
-      <span>Developed by Harshit Tomar 2022 | All rights reserved.</span>
+      <span>Developed by Harshit Tomar 2023 | All rights reserved.</span>
     </section>
   )
 }
