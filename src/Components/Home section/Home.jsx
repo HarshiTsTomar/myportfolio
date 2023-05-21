@@ -11,10 +11,10 @@ const Home = () => {
       {/* content visible at wide screen */}
       <div className='leftIcons'>
         <div className='socials grid'>
-          <a href="https://github.com/HarshiTsTomar" target='_blank'>
+          <a href="https://github.com/HarshiTsTomar" target='_blank' rel="noreferrer">
             <AiFillGithub className='icon'/>
           </a>
-          <a href="https://www.linkedin.com/in/harshit-singh-tomar-6635a4242/" target='_blank'>
+          <a href="https://www.linkedin.com/in/harshit-singh-tomar-6635a4242/" target='_blank' rel="noreferrer">
             <AiFillLinkedin className='icon'/>
           </a>
           <div className="line"></div>
@@ -60,7 +60,7 @@ const Home = () => {
       <div className="rightEmail">
         <div>
           <div className="emailAddress">
-            <a href="https://mailto:harshitt59@gmail.com" target='_blank'>
+            <a href="https://mailto:harshitt59@gmail.com" target='_blank' rel="noreferrer">
               harshitt59@gmail.com
             </a>
           </div>

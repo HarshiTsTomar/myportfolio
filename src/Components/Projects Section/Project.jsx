@@ -118,14 +118,14 @@ const Project = () => {
 
                   <div className="externalLinks flex">
                     <div className="githubIcon">
-                      <a href={github} target='_blank'>
+                      <a href={github} target='_blank' rel="noreferrer">
                         <FiGithub className='icon'/>
                       </a>
                     </div>
                   </div>
 
                   <div className="imgDiv">
-                    <a href={liveLink} target='_blank'>
+                    <a href={liveLink} target='_blank' rel="noreferrer">
                       <img src={image} alt="title" />
                     </a>
                   </div>

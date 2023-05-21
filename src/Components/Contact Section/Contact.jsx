@@ -83,7 +83,7 @@ const Contact = () => {
                 </span>
 
                 <div>
-                  <a href="" className='flex'>
+                  <a href="#Contact" className='flex'>
                     Send Message
                    
                   </a>
