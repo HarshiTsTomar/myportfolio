@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 import {TbCloudDownload} from 'react-icons/tb'
-import img from '../../Assets/ht4.jpg'
+import img from '../../Assets/ht4.jpeg'
 
 const About = () => {
   return (
